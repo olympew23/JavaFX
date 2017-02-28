@@ -13,7 +13,7 @@
             <TextField fx:id="name" minWidth="-Infinity" text="Name" HBox.hgrow="ALWAYS" />
             <TextField fx:id="phone" text="Phone#" />
             <TextField fx:id="email" text="Email" />
-            <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#addItems" text="Add" />
+            <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#addItems" onKeyPressed="#toggleItem" text="Add" />
             <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#removeItem" text="Remove" />
          </children>
       </HBox>

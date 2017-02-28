@@ -29,13 +29,15 @@ public class Controller implements Initializable {
 
 
     public void addItems() {
-        if (items.isEmpty()){
-            return;
+        if (name.getText().isEmpty()|| phone.getText().isEmpty() || email.getText().isEmpty()) {
+
+        } else {
+            items.add(new Contact(name.getText(), phone.getText(), email.getText()));
+            name.setText("");
+            phone.setText("");
+            email.setText("");
         }
-        items.add(new Contact(name.getText(), phone.getText(), email.getText()));
-        name.setText("");
-        phone.setText("");
-        email.setText("");
+
     }
 
     public void removeItem() {
